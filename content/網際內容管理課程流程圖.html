@@ -1,0 +1,95 @@
+<!doctype html>
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>CMSimfly</title> <link rel="stylesheet" type="text/css" href="./../static/cmsimply.css">
+<script src="tipuesearch_content.js"></script>
+<script src="./../static/jquery.js"></script>
+<link rel="stylesheet" href="./../static/tipuesearch/css/tipuesearch.css">
+<script src="./../static/tipuesearch/tipuesearch_set.js"></script>
+<script src="./../static/tipuesearch/tipuesearch.min.js"></script>
+
+<script type="text/javascript" src="./../static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushCSharp.js"></script>
+<link type="text/css" rel="stylesheet" href="./../static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+<!-- for LaTeX equations 暫時不用
+<script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+-->
+<!-- 暫時不用
+<script src="./../static/fengari-web.js"></script>
+<script type="text/javascript" src="./../static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+
+<script type="text/javascript">
+/*shorthand of $(document).ready(function(){};); */
+$(function(){
+    $("ul.topmenu> li:has(ul) > a").append('<div class="arrow-right"></div>');
+    $("ul.topmenu > li ul li:has(ul) > a").append('<div class="arrow-right"></div>');
+});
+function doSearch() {
+     $('#tipue_search_input').tipuesearch({
+        newWindow: true, minimumLength: 2
+     });
+}
+$(document).ready(doSearch);
+</script>
+
+</head><header><h1>40723135</h1> <confmenu>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="sitemap.html">Site Map</a></li>
+<li><a href="./../reveal/index.html">reveal</a></li>
+<li><a href="./../blog/index.html">blog</a></li>
+
+</ul>
+</confmenu></header>
+<div class='container'><nav><ul id='css3menu1' class='topmenu'><div class="tipue_search_group"><input style="width: 6vw;" type="text" name="q" id="tipue_search_input" pattern=".{2,}" title="Press enter key to search" required></div><li><a href='7組員名單.html'>7組員名單</a><li><a href='配置可攜程式環境.html'>配置可攜程式環境</a><li><a href='倉儲改版.html'>倉儲改版</a><li><a href='Mobile網站內容.html'>Mobile網站內容</a><li><a href='Virtual Host虛擬主機.html'>Virtual Host虛擬主機</a><li><a href='期中報告.html'>期中報告</a><ul><li><a href='目錄結構.html'>目錄結構</a><li><a href='頁面編輯.html'>頁面編輯</a><li><a href='插入程式碼.html'>插入程式碼</a><ul><li><a href='Java 程式碼.html'>Java 程式碼</a><li><a href='Python 程式碼.html'>Python 程式碼</a><li><a href='C或C++程式碼.html'>C或C++程式碼</a><li><a href='Lua 程式碼.html'>Lua 程式碼</a><li><a href='Javascript 程式碼.html'>Javascript 程式碼</a><li><a href='Html 原始碼.html'>Html 原始碼</a></li></ul><li><a href='網際簡報.html'>網際簡報</a><li><a href='網誌編輯.html'>網誌編輯</a><li><a href='已知錯誤.html'>已知錯誤</a><li><a href='內容管理.html'>內容管理</a><ul><li><a href='第一步.html'>第一步</a><li><a href='第二步.html'>第二步</a><li><a href='第三步.html'>第三步</a><li><a href='第四步.html'>第四步</a><li><a href='第五步.html'>第五步</a></li></ul><li><a href='期中影片.html'>期中影片</a></li></ul><li><a href='Clone Github 倉儲.html'>Clone Github 倉儲</a><ul><li><a href='ssh clone 倉儲.html'>ssh clone 倉儲</a><li><a href='網際內容管理課程流程圖.html'>網際內容管理課程流程圖</a></li></ul></nav><section><div id="tipue_search_content">ssh clone 倉儲 << <a href='ssh clone 倉儲.html'>Previous</a> <br /><h1>網際內容管理課程流程圖</h1>
+<div class="fauxcolumn-outer fauxcolumn-left-outer">
+<div class="fauxborder-left"><br/><br/><img src="https://mde.tw/wcm2019./../images/wcm.png" width="600"/><br/><br/><span>利用 Virtualbox 建立虛擬 Ubuntu 18.04 網際內容管理系統伺服主機:</span><br/><span><br/></span>1. 安裝最新版的 Virtualbox<br/>2. 建立 Ubuntu 18.04 虛擬主機<br/>3. 以網路卡橋接啟動 Ubuntu 伺服器<br/>4. 以 sudo apt install nginx 安裝 nginx WWW 伺服器<br/>5. 以 ifconfig 查 Ubuntu 伺服器的 IP, 測試 nginx 伺服器是否可以連線<br/>6. 以 Windows 10  下的 Filezilla client, 將編輯好的 nginx 設定檔案送到 Ubuntu<br/>7. 利用 Ubuntu 指令將設定檔案搬至設定位置後, 以 /etc/init.d/nginx restart 重新啟動 nginx<br/>8. 在 Ubuntu 中以 sudo apt install uwsgi 安裝 uwsgi<br/><span>9. 在 Windows 10 編輯 uwsgi 與 nginx 所需的設定檔案, 完成後以 filezilla 送至 Ubuntu.</span><br/>10. 將 CMSimfly 程式碼送到 Ubuntu 伺服器中對應目錄後.<br/>11. 在 Ubuntu 建立 cmsimfly 服務, 並設定隨機啟動.<br/>12. 完成後, 在 Windows 10 以瀏覽器連線至 CMSimfly, 確認動態網頁與靜態網頁可以在虛擬主機中正常啟動.<br/>13. 以上相關網際內容管理在機械工程相關應用可參</div>
+</div>
+<div class="columns-inner"></div>
+<div class="column-center-outer"></div>
+<div class="column-center-inner"></div>
+<div class="main section" id="main" name="Main"></div>
+<div class="widget Blog" data-version="1" id="Blog1"></div>
+<div class="blog-posts hfeed"></div>
+<div class="date-outer"></div>
+<div class="date-posts"></div>
+<div class="post-outer"></div>
+<div class="post hentry uncustomized-post-template" itemprop="blogPost" itemscope="itemscope" itemtype="http://schema.org/BlogPosting"></div>
+<p><span><span><span> </span></span></span></p><br />ssh clone 倉儲 << <a href='ssh clone 倉儲.html'>Previous</a> </div></section></div></body></html>
