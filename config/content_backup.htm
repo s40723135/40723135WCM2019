@@ -499,27 +499,21 @@ COPY TO CLIPBOARD	</pre>
 <p><span><span>40723139 :</span></span></p>
 <p><span><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/Y03d1vVRGgc" width="560"></iframe></span></span><span><span></span></span></p>
 <h1>Clone Github 倉儲</h1>
-<h3><span>ssh clone 倉儲</span></h3>
-<p><span><span>以 scrum-1 帳號為例, 若採 ssh clone 倉儲, 需要先設定對應權限.<br/><br/><span>基本概念</span><br/><br/><span>從<span> </span></span><a href="https://github.com/scrum-1/cd2019">https://github.com/scrum-1/cd2019</a><span><span> </span>倉儲中對應的 clone or downloads 中 Clone with SSH, 所列出的 URL 為:</span><br/><br/><span>    git@github.com:scrum-1/cd2019.git</span><br/><br/><span>表示將以 git 帳號, 登入 github.com 主機, 進入 scrum-1 帳號中對應的 cd2019 倉儲, 若直接 git clone 此一倉儲, 則指令為:</span><br/><br/><span>    git clone git@github.com:scrum-1/cd2019.git</span><br/><br/><span>特別注意, 其中的 github.com 為網站符號名稱, 意思是所採用的 ssh 將利用 @ 前方的 git 當作帳號, 並且將採用 ssh 協定登入 github.com 網站.</span><br/><br/><span>假如, 使用者所採用的可攜程式套件, 只在 home 目錄下的 .ssh 目錄登記一個 private key, 使用者就可以直接在 home/.ssh/config 中,將 github.com 當作 Host 代號, 並對應到 Hostname 為 github.com 作為連線的網站名稱.</span><br/><br/><span>但是, 若使用者所使用的可攜程式套件, 登錄一個以上的 private keys 時, 就必須透過一個以上不同的 Host 名稱加以區別, 以便導引 ssh 協定至不同區段, 以不同的 private key 對應 Github 上不同帳號下所登錄的 public key.</span></span></span></p><h2>網際內容管理課程流程圖:</h2>
+<h3>ssh clone 倉儲</h3>
+<p><span><span>以 scrum-1 帳號為例, 若採 ssh clone 倉儲, 需要先設定對應權限.<br/><br/><span>基本概念</span><br/><br/><span>從<span> </span></span><a href="https://github.com/scrum-1/cd2019">https://github.com/scrum-1/cd2019</a><span><span> </span>倉儲中對應的 clone or downloads 中 Clone with SSH, 所列出的 URL 為:</span><br/><br/><span>    git@github.com:scrum-1/cd2019.git</span><br/><br/><span>表示將以 git 帳號, 登入 github.com 主機, 進入 scrum-1 帳號中對應的 cd2019 倉儲, 若直接 git clone 此一倉儲, 則指令為:</span><br/><br/><span>    git clone git@github.com:scrum-1/cd2019.git</span><br/><br/><span>特別注意, 其中的 github.com 為網站符號名稱, 意思是所採用的 ssh 將利用 @ 前方的 git 當作帳號, 並且將採用 ssh 協定登入 github.com 網站.</span><br/><br/><span>假如, 使用者所採用的可攜程式套件, 只在 home 目錄下的 .ssh 目錄登記一個 private key, 使用者就可以直接在 home/.ssh/config 中,將 github.com 當作 Host 代號, 並對應到 Hostname 為 github.com 作為連線的網站名稱.</span><br/><br/><span>但是, 若使用者所使用的可攜程式套件, 登錄一個以上的 private keys 時, 就必須透過一個以上不同的 Host 名稱加以區別, 以便導引 ssh 協定至不同區段, 以不同的 private key 對應 Github 上不同帳號下所登錄的 public key.</span></span></span></p>
+<h2>網際內容管理課程流程圖</h2>
 <div class="fauxcolumn-outer fauxcolumn-left-outer">
-<div class="fauxborder-left"><br/><br/><img src="https://mde.tw/wcm2019/images/wcm.png" width="600"/><br/><br/><span>利用 Virtualbox 建立虛擬 Ubuntu 18.04 網際內容管理系統伺服主機:</span><br/><span><br/></span>1. 安裝最新版的 Virtualbox<br/>2. 建立 Ubuntu 18.04 虛擬主機<br/>3. 以網路卡橋接啟動 Ubuntu 伺服器<br/>4. 以 sudo apt install nginx 安裝 nginx WWW 伺服器<br/>5. 以 ifconfig 查 Ubuntu 伺服器的 IP, 測試 nginx 伺服器是否可以連線<br/>6. 以 Windows 10  下的 Filezilla client, 將編輯好的 nginx 設定檔案送到 Ubuntu<br/>7. 利用 Ubuntu 指令將設定檔案搬至設定位置後, 以 /etc/init.d/nginx restart 重新啟動 nginx<br/>8. 在 Ubuntu 中以 sudo apt install uwsgi 安裝 uwsgi<br/><span>9. 在 Windows 10 編輯 uwsgi 與 nginx 所需的設定檔案, 完成後以 filezilla 送至 Ubuntu.</span><br/>10. 將 CMSimfly 程式碼送到 Ubuntu 伺服器中對應目錄後.<br/>11. 在 Ubuntu 建立 cmsimfly 服務, 並設定隨機啟動.<br/>12. 完成後, 在 Windows 10 以瀏覽器連線至 CMSimfly, 確認動態網頁與靜態網頁可以在虛擬主機中正常啟動.<br/>13. 以上相關網際內容管理在機械工程相關應用可參</div></div>
-<div class="columns-inner">
-<div class="column-center-outer">
-<div class="column-center-inner">
-<div class="main section" id="main" name="Main">
-<div class="widget Blog" data-version="1" id="Blog1">
-<div class="blog-posts hfeed">
-<div class="date-outer">
-<div class="date-posts">
-<div class="post-outer">
+<div class="fauxborder-left"><br/><br/><img src="https://mde.tw/wcm2019/images/wcm.png" width="600"/><br/><br/><span>利用 Virtualbox 建立虛擬 Ubuntu 18.04 網際內容管理系統伺服主機:</span><br/><span><br/></span>1. 安裝最新版的 Virtualbox<br/>2. 建立 Ubuntu 18.04 虛擬主機<br/>3. 以網路卡橋接啟動 Ubuntu 伺服器<br/>4. 以 sudo apt install nginx 安裝 nginx WWW 伺服器<br/>5. 以 ifconfig 查 Ubuntu 伺服器的 IP, 測試 nginx 伺服器是否可以連線<br/>6. 以 Windows 10  下的 Filezilla client, 將編輯好的 nginx 設定檔案送到 Ubuntu<br/>7. 利用 Ubuntu 指令將設定檔案搬至設定位置後, 以 /etc/init.d/nginx restart 重新啟動 nginx<br/>8. 在 Ubuntu 中以 sudo apt install uwsgi 安裝 uwsgi<br/><span>9. 在 Windows 10 編輯 uwsgi 與 nginx 所需的設定檔案, 完成後以 filezilla 送至 Ubuntu.</span><br/>10. 將 CMSimfly 程式碼送到 Ubuntu 伺服器中對應目錄後.<br/>11. 在 Ubuntu 建立 cmsimfly 服務, 並設定隨機啟動.<br/>12. 完成後, 在 Windows 10 以瀏覽器連線至 CMSimfly, 確認動態網頁與靜態網頁可以在虛擬主機中正常啟動.<br/>13. 以上相關網際內容管理在機械工程相關應用可參</div>
+</div>
+<div class="columns-inner"></div>
+<div class="column-center-outer"></div>
+<div class="column-center-inner"></div>
+<div class="main section" id="main" name="Main"></div>
+<div class="widget Blog" data-version="1" id="Blog1"></div>
+<div class="blog-posts hfeed"></div>
+<div class="date-outer"></div>
+<div class="date-posts"></div>
+<div class="post-outer"></div>
 <div class="post hentry uncustomized-post-template" itemprop="blogPost" itemscope="itemscope" itemtype="http://schema.org/BlogPosting"></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 <p><span><span><span> </span></span></span></p>
+<h1>期末影片</h1>
